@@ -68,13 +68,13 @@
             <!-- Desktop Menu -->
             <nav class="hidden md:flex gap-2 text-gray-700">
                 <a href="#home"
-                    class="font-bold text-black hover:text-gray-500 hover:bg-gray-700 rounded-md px-2">Home</a>
+                    class="font-bold text-black hover:text-white hover:bg-gray-700 rounded-md px-2">Home</a>
                 <a href="#About"
-                    class="font-bold text-black hover:text-gray-500 hover:bg-gray-700 rounded-md px-2">About</a>
+                    class="font-bold text-black hover:text-white hover:bg-gray-700 rounded-md px-2">About</a>
                 <a href="#portfolio"
-                    class="font-bold text-black hover:text-gray-500 hover:bg-gray-700  rounded-md px-2">Portfolio</a>
+                    class="font-bold text-black hover:text-white hover:bg-gray-700  rounded-md px-2">Portfolio</a>
                 <a href="#Contact"
-                    class="font-bold text-black hover:text-gray-500 hover:bg-gray-700  rounded-md px-2">Contact</a>
+                    class="font-bold text-black hover:text-white hover:bg-gray-700  rounded-md px-2">Contact</a>
             </nav>
             <!-- Mobile Menu Toggle -->
             <div class="md:hidden">
@@ -237,29 +237,30 @@
     </section>
 
 
-    <section id="About" class="bg-white py-[100px]   overflow-hidden">
-        <div data-aos="fade-up" data-aos-duration="2000"
-            class="max-w-screen-xl mx-4 px-[15px] md:px-6 lg:px-8 flex flex-col md:flex-row ">
-            <!-- Left - about image -->
-            <div class="w-full md:w-[30%] mr-[40px] mb-4 border-gray-400">
-                <img src="https://img.freepik.com/premium-vector/vector-person-holding-showing-cartoon-illustration-paper-board-document_1213699-3108.jpg"
-                    alt="Profile" class="relative  w-full  mx-auto rounded shadow hover:shadow-lg transition">
-            </div>
-            <!-- Right - about Content -->
-            <div class="w-full md:w-[70%] md:pl-10 text-gray-800">
-                <h2 class="text-4xl font-bold text-black mb-6  flex items-center  gap-2">
-                    About me
-                </h2>
-                <p class="text-base mb-10 leading-relaxed">
-                    "I am a passionate and creative web designer with a strong foundation in HTML, CSS, Tailwind CSS,
-                    and JavaScript. I focus on clean design, user experience, and cross-browser compatibility. I’m
-                    always eager to learn new technologies and improve my skills to build modern, user-friendly web
-                    interfaces. I aim to contribute to real-world projects where I can grow and make a meaningful impact
-                    through my designs."
-                </p>
-            </div>
+   <section id="About" class="bg-white py-[100px] overflow-hidden">
+    <div data-aos="fade-up" data-aos-duration="1500" class="max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+        <!-- Left - about image -->
+        <div class="w-full md:w-[30%] mb-6 md:mb-0 md:mr-10">
+            <img src="https://img.freepik.com/premium-vector/vector-person-holding-showing-cartoon-illustration-paper-board-document_1213699-3108.jpg"
+                alt="Profile"
+                class="w-full mx-auto rounded shadow hover:shadow-lg transition duration-300">
         </div>
-    </section>
+        <!-- Right - about content -->
+        <div class="w-full md:w-[70%] text-gray-800">
+            <h2 class="text-4xl font-bold text-black mb-6 flex items-center gap-2">
+                About me
+            </h2>
+            <p class="text-base mb-10 leading-relaxed">
+                "I am a passionate and creative web designer with a strong foundation in HTML, CSS, Tailwind CSS,
+                and JavaScript. I focus on clean design, user experience, and cross-browser compatibility. I’m
+                always eager to learn new technologies and improve my skills to build modern, user-friendly web
+                interfaces. I aim to contribute to real-world projects where I can grow and make a meaningful impact
+                through my designs."
+            </p>
+        </div>
+    </div>
+</section>
+
 
 
     <section class=" overflow-hidden py-12">
@@ -300,7 +301,7 @@
         </div>
     </section>
 
-    <section class="overflow-hidden"> 
+    <section class="overflow-hidden">
         <div class="bg-white py-[100px]   overflow-hidden">
             <div data-aos="fade-up" data-aos-duration="1500"
                 class="max-w-screen-xl px-[15px] md:px-6 lg:px-8 mx-auto  flex flex-col md:flex-row">
@@ -346,7 +347,8 @@
 
 
     <section id="portfolio">
-        <div data-aos="zoom-in" data-aos-duration="1500" class="bg-gray-100 py-[100px] max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8">
+        <div data-aos="zoom-in" data-aos-duration="1500"
+            class="bg-gray-100 py-[100px] max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8">
             <!-- left : portfolio  Heading -->
             <h2 class="text-4xl font-bold text-center mb-8">My Portfolio</h2>
             <!-- Portfolio Items -->
@@ -384,12 +386,13 @@
 
 
     <section id="Contact" class=" py-[100px] overflow-hidden">
-        <div data-aos="fade-up" data-aos-duration="1500" class="max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8 sm:px-6 ">
+        <div data-aos="fade-up" data-aos-duration="1500"
+            class="max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8 sm:px-6 ">
             <!-- contact heading -->
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Contact me</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <!-- Phone -->
-                <div 
+                <div
                     class="bg-gray-100 p-6 rounded-2xl hover:border border-gray-300 shadow hover:shadow-lg transition cursor-pointer">
                     <div class="text-green-600 text-4xl mb-4">
                         <i class="fa-solid fa-phone" style="color: #545454;"></i>
@@ -398,7 +401,7 @@
                     <p class="text-gray-600">+91 96382 11368</p>
                 </div>
                 <!-- Email -->
-                <div 
+                <div
                     class="bg-gray-100 p-6 rounded-2xl hover:border border-gray-300 shadow hover:shadow-lg transition cursor-pointer">
                     <div class="text-indigo-600 text-4xl mb-4">
                         <i class="fa-solid fa-envelope" style="color: #545454;"></i>
@@ -407,7 +410,7 @@
                     <p class="text-gray-600">jethvakalpesh9638@gmail.com</p>
                 </div>
                 <!-- Location -->
-                <div 
+                <div
                     class="bg-gray-100 p-6 rounded-2xl hover:border border-gray-300 shadow hover:shadow-lg transition cursor-pointer">
                     <div class="text-red-600 text-4xl mb-4">
                         <i class="fa-solid fa-location-dot" style="color: #545454;"></i>
