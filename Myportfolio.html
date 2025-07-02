@@ -21,6 +21,13 @@
     <link rel="stylesheet" href="OwlCarousel2-2.3.4/css/owl.carousel.min.css">
     <link rel="stylesheet" href="OwlCarousel2-2.3.4/css/owl.theme.default.min.css">
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Grey+Qo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,500&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Syne:wght@400..800&family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Underdog&display=swap"
+        rel="stylesheet">
+
     <style>
         .static-header {
             position: fixed;
@@ -46,12 +53,25 @@
             background-color: rgb(82, 82, 82) !important;
         }
 
-        .owl-carousel .item img {
+        /* .owl-carousel .item img {
             filter: grayscale(10);
         }
 
         .owl-carousel .item img:hover {
             filter: grayscale(0);
+        } */
+
+        .font {
+            font-family: "Syne", sans-serif;
+
+        }
+
+        .scrolled {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .scrolled-color {
+            color: white !important;
         }
     </style>
 
@@ -59,22 +79,18 @@
 
 <body class="scroll-smooth">
     <!-- Header -->
-    <header class="bg-gray-300 shadow-md static-header">
+    <header class=" static-header header transition duration-300 ease-in">
         <div class="max-w-screen-xl mx-auto  py-4 flex items-center justify-between px-[15px] ">
             <!-- Logo -->
-            <div class="text-3xl font-bold text-black cursor-pointer">
+            <div class="text-3xl font-bold text-black cursor-pointer font abc">
                 MyPortfolio
             </div>
             <!-- Desktop Menu -->
-            <nav class="hidden md:flex gap-2 text-gray-700">
-                <a href="#home"
-                    class="font-bold text-black hover:text-white hover:bg-gray-700 rounded-md px-2">Home</a>
-                <a href="#About"
-                    class="font-bold text-black hover:text-white hover:bg-gray-700 rounded-md px-2">About</a>
-                <a href="#portfolio"
-                    class="font-bold text-black hover:text-white hover:bg-gray-700  rounded-md px-2">Portfolio</a>
-                <a href="#Contact"
-                    class="font-bold text-black hover:text-white hover:bg-gray-700  rounded-md px-2">Contact</a>
+            <nav class="hidden md:flex gap-6 font text-gray-700">
+                <a href="#home" class="font-bold text-black hover:text-gray-500 abc ">Home</a>
+                <a href="#About" class="font-bold text-black hover:text-gray-500 abc ">About</a>
+                <a href="#portfolio" class="font-bold text-black hover:text-gray-500 abc">Portfolio</a>
+                <a href="#Contact" class="font-bold text-black hover:text-gray-500 abc  ">Contact</a>
             </nav>
             <!-- Mobile Menu Toggle -->
             <div class="md:hidden">
@@ -84,33 +100,33 @@
             </div>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden px-4 pb-4 hidden">
-            <a href="#home" class="block py-2 font-semibold hover:text-gray-500">Home</a>
-            <a href="#About" class="block py-2 font-semibold hover:text-gray-500">About</a>
-            <a href="#portfolio" class="block py-2 font-semibold hover:text-gray-500">Portfolio</a>
-            <a href="#Contact" class="block py-2 font-semibold hover:text-gray-500">Contact</a>
+        <div id="mobile-menu" class="md:hidden px-4 pb-4 hidden font">
+            <a href="#home" class="block py-2 font-semibold hover:text-gray-500 text-white">Home</a>
+            <a href="#About" class="block py-2 font-semibold hover:text-gray-500 text-white">About</a>
+            <a href="#portfolio" class="block py-2 font-semibold hover:text-gray-500 text-white">Portfolio</a>
+            <a href="#Contact" class="block py-2 font-semibold hover:text-gray-500 text-white">Contact</a>
         </div>
     </header>
 
 
     <section class="overflow-hidden">
-        <section id="home" class="bg-white py-[120px] px-[15px] md:px-6 lg:px-8">
+        <section id="home" class="bg-[#e0e1dc] py-[120px] px-[15px] md:px-6 lg:px-8">
             <div class="max-w-screen-xl mx-auto ">
                 <div class="grid md:grid-cols-2  items-center ">
                     <!-- Left text Content -->
-                    <div data-aos="fade-up" data-aos-duration="1500" class="bg-gray-100 p-[100px]">
-                        <p class="text-sm text-gray-500 mb-2">Welcome</p>
-                        <h1 class="text-4xl font-bold text-black mb-4">
+                    <div data-aos="fade-up" data-aos-duration="1500" class="bg-[#e0e1dc] p-[100px] ">
+                        <p class="text-sm text-gray-500 mb-2 font">Welcome</p>
+                        <h1 class="text-4xl font-bold text-black mb-4 font">
                             I have <span class="text-gray-500">Creative</span> <br>
                             <span class="text-gray-500">Design</span> Experience
                         </h1>
-                        <p class="text-gray-500 mb-6">
+                        <p class="text-gray-500 mb-6 ">
                             I'm kalpesh, a creative Product Designer. I've been helping businesses to solve their
                             problems.
                         </p>
                         <div class="flex gap-4">
                             <button
-                                class="bg-black hover:bg-gray-400 text-white hover:text-black duration-300 font-medium py-2 px-6 rounded">
+                                class="font bg-[#091e33] hover:bg-[#505e68] text-white duration-300 font-medium py-2 px-6 rounded">
                                 Contact me
                             </button>
                         </div>
@@ -135,157 +151,56 @@
     </section>
 
 
-    <section class=" py-12 overflow-hidden">
-        <div data-aos="fade-up" data-aos-duration="2000"
-            class="max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8 bg-gray-100 rounded shadow-md my-4 overflow-hidden">
-            <!-- <div
-                class="flex flex-wrap  items-center text-center sm:text- divide-y sm:divide-y-0 sm:divide-x divide-gray-500 font-bold text-gray-600">
-                <div class="flex-1 py-4 sm:py-0 px-4">
-                    <h2 class="text-3xl ">HTML</h2>
-                </div>
-                <div class="flex-1 py-4 sm:py-0 px-4">
-                    <h2 class="text-3xl ">CSS</h2>
-                </div>
-                <div class="flex-1 py-4 sm:py-0 px-4">
-                    <h2 class="text-3xl ">Tailwind</h2>
-                </div>
-                <div class="flex-1 py-4 sm:py-0 px-4">
-                    <h2 class="text-3xl ">Bootstrap</h2>
-                </div>
-                <div class="flex-1 py-4 sm:py-0 px-4">
-                    <h2 class="text-3xl ">Javascript</h2>
-                </div>
-                <div class="flex-1 py-4 sm:py-0 px-4">
-                    <h2 class="text-3xl ">Jquery</h2>
-                </div>
-                <div class="flex-1 py-4 sm:py-0 px-4">
-                    <h2 class="text-3xl ">Wordpress</h2>
-                </div>
-                <div class="flex-1 py-4 sm:py-0 px-4">
-                    <h2 class="text-3xl ">Github</h2>
-                </div>
-            </div> -->
-            <div class="owl-carousel owl-theme py-4 pt-8">
-                <div data-aos="zoom-in" data-aos-duration="500" class="item">
-                    <div class=" flex justify-center">
-                        <div class="w-[100px]">
-                            <img class="" width="100%"
-                                src="https://images.vexels.com/media/users/3/166383/isolated/preview/6024bc5746d7436c727825dc4fc23c22-html-programming-language-icon.png"
-                                alt="HTML">
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="900" class="item ">
-                    <div class="flex justify-center">
-                        <div class="w-[100px]">
-                            <img class="" width="100%"
-                                src="https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png"
-                                alt="CSS">
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="1300" class="item">
-                    <div class=" flex justify-center">
-                        <div class="w-[100px]">
-                            <img class="" width="100%" src="tailwind-logo.png" alt="Tailwind">
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="1700" class="item">
-                    <div class=" flex justify-center">
-                        <div class="w-[120px]">
-                            <img class="" width="100%" src="http://pluspng.com/img-png/bootstrap-png-bootstrap-512.png"
-                                alt="Bootstrap">
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="2000" class="item">
-                    <div class=" flex justify-center">
-                        <div class="w-[180px]">
-                            <img class="" width="100%"
-                                src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Symbol.png"
-                                alt="JavaScript">
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="2000" class="item">
-                    <div class=" flex justify-center">
-                        <div class="w-[100px]">
-                            <img class="" width="100%" src="jquery-logo.png" alt="Jquery">
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="2000" class="item">
-                    <div class=" flex justify-center">
-                        <div class="w-[160px]">
-                            <img class="" width="100%"
-                                src="https://static.vecteezy.com/system/resources/previews/020/975/581/non_2x/wordpress-logo-wordpress-icon-transparent-free-png.png"
-                                alt="Wordpress">
-                        </div>
-                    </div>
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="2000" class="item ">
-                    <div class=" flex justify-center">
-                        <div class="w-[100px]">
-                            <img class="" width="100%"
-                                src="github-logo.png" alt="GitHub">
-                        </div>
-                    </div>
-                </div>
+    <section id="About" class="bg-[#091e33] py-[100px] overflow-hidden">
+        <div data-aos="fade-up" data-aos-duration="1500"
+            class="max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+            <!-- Left - about image -->
+            <div class="w-full md:w-[30%] mb-6 md:mb-0 md:mr-10">
+                <img src="https://img.freepik.com/premium-vector/vector-person-holding-showing-cartoon-illustration-paper-board-document_1213699-3108.jpg"
+                    alt="Profile"
+                    class="w-full mx-auto rounded-3xl  outline-offset-2 outline  outline-gray-500 p-4 shadow hover:shadow-lg transition duration-300">
+            </div>
+            <!-- Right - about content -->
+            <div class="w-full md:w-[70%] text-white ">
+                <h2 class="text-4xl font-bold  mb-6 flex items-center gap-2 font">
+                    About me
+                </h2>
+                <p classoutline="text-base mb-10 leading-relaxed">
+                    "I am a passionate and creative web designer with a strong foundation in HTML, CSS, Tailwind CSS,
+                    and JavaScript. I focus on clean design, user experience, and cross-browser compatibility. I’m
+                    always eager to learn new technologies and improve my skills to build modern, user-friendly web
+                    interfaces. I aim to contribute to real-world projects where I can grow and make a meaningful impact
+                    through my designs."
+                </p>
             </div>
         </div>
     </section>
 
 
-   <section id="About" class="bg-white py-[100px] overflow-hidden">
-    <div data-aos="fade-up" data-aos-duration="1500" class="max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8 flex flex-col md:flex-row items-center">
-        <!-- Left - about image -->
-        <div class="w-full md:w-[30%] mb-6 md:mb-0 md:mr-10">
-            <img src="https://img.freepik.com/premium-vector/vector-person-holding-showing-cartoon-illustration-paper-board-document_1213699-3108.jpg"
-                alt="Profile"
-                class="w-full mx-auto rounded shadow hover:shadow-lg transition duration-300">
-        </div>
-        <!-- Right - about content -->
-        <div class="w-full md:w-[70%] text-gray-800">
-            <h2 class="text-4xl font-bold text-black mb-6 flex items-center gap-2">
-                About me
-            </h2>
-            <p class="text-base mb-10 leading-relaxed">
-                "I am a passionate and creative web designer with a strong foundation in HTML, CSS, Tailwind CSS,
-                and JavaScript. I focus on clean design, user experience, and cross-browser compatibility. I’m
-                always eager to learn new technologies and improve my skills to build modern, user-friendly web
-                interfaces. I aim to contribute to real-world projects where I can grow and make a meaningful impact
-                through my designs."
-            </p>
-        </div>
-    </div>
-</section>
 
-
-
-    <section class=" overflow-hidden py-12">
+    <section class=" overflow-hidden py-12 bg-[#e0e1dc]">
         <div data-aos="zoom-in" data-aos-duration="1500"
-            class="max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8 flex flex-col md:flex-row bg-gray-100 rounded shadow-lg  overflow-hidden py-[100px] ">
+            class="max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8 flex flex-col md:flex-row    overflow-hidden py-[100px] ">
             <!-- Right :  My aducation Content-->
             <div data-aos="fade-right" data-aos-duration="1500"
                 class="w-full md:w-[50%] text-gray-800 flex justify-center">
-                <div class="w-[50%]">
+                <div class="w-[50%] ">
                     <h2 class="text-3xl font-bold text-black mb-6"> My Education</h2>
                     <div class="mb-6">
-                        <h3 class="text-xl font-semibold text-gray-800">Web Design Course</h3>
+                        <h3 class="text-xl font-semibold text-gray-800 font">Web Design Course</h3>
                         <p class="text-gray-600">Creative & Multimedia Institute
                             <br> 2023-24
                         </p>
                     </div>
                     <div class="mb-6">
-                        <h3 class="text-xl font-semibold text-gray-800"> BACHELOR OF COMMERCE </h3>
+                        <h3 class="text-xl font-semibold text-gray-800 font"> BACHELOR OF COMMERCE </h3>
                         <p class="text-gray-600">J.z. Shah Arts & H.p. Desai Commerce
                             college , Amroli ,surat
                             <br>2022-23
                         </p>
                     </div>
                     <div class="mb-6">
-                        <h3 class="text-xl font-semibold text-gray-800"> HSC</h3>
+                        <h3 class="text-xl font-semibold text-gray-800 font"> HSC</h3>
                         <p class="text-gray-600">Mauni International School
                             utran,surat
                             <br>2021-22
@@ -296,48 +211,49 @@
             <!-- right : my aducation image  -->
             <div data-aos="fade-left" data-aos-duration="1500" class="w-full md:w-[50%] mx-4 ">
                 <img src="https://www.pngplay.com/wp-content/uploads/6/Education-Icon-Background-PNG-Image.png"
-                    alt="Profile" class="relative w-full max-w-md mx-auto rounded-lg hover:shadow-lg transition">
+                    alt="Profile"
+                    class="relative w-full max-w-md mx-auto rounded-3xl outline-offset-2 outline  outline-gray-500 p-4">
             </div>
         </div>
     </section>
 
     <section class="overflow-hidden">
-        <div class="bg-white py-[100px]   overflow-hidden">
+        <div class="bg-[#091e33] py-[100px]   overflow-hidden">
             <div data-aos="fade-up" data-aos-duration="1500"
                 class="max-w-screen-xl px-[15px] md:px-6 lg:px-8 mx-auto  flex flex-col md:flex-row">
                 <!-- left : my skill image -->
                 <div class="w-full md:w-[40%] mr-[45px] mb-4  border-gray-400">
                     <img src="https://avatars.mds.yandex.net/i?id=ece18441a835b46d32a8dcf86921440b79a5d4fa-10555004-images-thumbs&n=13"
                         alt="Profile"
-                        class="relative  w-full h-[340px] max-w-xs mx-auto rounded-2xl shadow hover:shadow-lg transition">
+                        class="relative  w-full h-[340px] max-w-xs mx-auto rounded-3xl  outline-offset-2 outline  outline-gray-500 p-4">
                 </div>
                 <!-- right : my skill Content -->
                 <div class="w-full md:w-[60%] text-gray-800">
                     <div class="text-center">
-                        <h2 class="text-3xl font-bold border-2 py-2 text-black mb-6"> My Skills</h2>
-                        <div class="grid grid-cols-2 gap-4 text-gray-800">
+                        <h2 class="text-3xl font-bold border-2 py-2 text-white mb-6 font"> My Skills</h2>
+                        <div class="grid grid-cols-2 gap-4 text-gray-800 ">
                             <span data-aos="fade-up" data-aos-duration="1500"
-                                class="bg-gray-100 px-4 py-2 border- rounded shadow text-center">HTML</span>
+                                class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">HTML</span>
                             <span data-aos="fade-left" data-aos-duration="1500"
-                                class="bg-gray-100 px-4 py-2 border- rounded shadow text-center">CSS</span>
+                                class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">CSS</span>
                             <span data-aos="fade-up" data-aos-duration="1500"
-                                class="bg-gray-100 px-4 py-2 border- rounded shadow text-center">Tailwind CSS</span>
+                                class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">Tailwind CSS</span>
                             <span data-aos="fade-left" data-aos-duration="1500"
-                                class="bg-gray-100 px-4 py-2 border- rounded shadow text-center">Bootstrap</span>
+                                class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">Bootstrap</span>
                             <span data-aos="fade-up" data-aos-duration="1500"
-                                class="bg-gray-100 px-4 py-2 border- rounded shadow text-center">JavaScript</span>
+                                class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">JavaScript</span>
                             <span data-aos="fade-left" data-aos-duration="1500"
-                                class="bg-gray-100 px-4 py-2 border- rounded shadow text-center">Jquery</span>
+                                class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">Jquery</span>
                             <span data-aos="fade-up" data-aos-duration="1500"
-                                class="bg-gray-100 px-4 py-2 border- rounded shadow text-center">Wordpress</span>
+                                class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">Wordpress</span>
                             <span data-aos="fade-left" data-aos-duration="1500"
-                                class="bg-gray-100 px-4 py-2 border- rounded shadow text-center">GitHub</span>
+                                class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">GitHub</span>
                             <span data-aos="fade-up" data-aos-duration="1500"
-                                class="bg-gray-100 px-4 py-2 border- rounded shadow text-center">Figma</span>
+                                class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">Figma</span>
                             <span data-aos="fade-left" data-aos-duration="1500"
-                                class="bg-gray-100 px-4 py-2 border- rounded shadow text-center">Photoshop</span>
+                                class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">Photoshop</span>
                             <span data-aos="fade-up" data-aos-duration="1500"
-                                class="bg-gray-100 px-4 py-2 border- rounded shadow text-center">Illustator</span>
+                                class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">Illustator</span>
                         </div>
                     </div>
                 </div>
@@ -346,18 +262,18 @@
     </section>
 
 
-    <section id="portfolio">
+    <section id="portfolio " class="bg-[#e0e1dc]">
         <div data-aos="zoom-in" data-aos-duration="1500"
-            class="bg-gray-100 py-[100px] max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8">
+            class=" py-[100px] max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8 ">
             <!-- left : portfolio  Heading -->
-            <h2 class="text-4xl font-bold text-center mb-8">My Portfolio</h2>
+            <h2 class="text-4xl font-bold text-center mb-8 font">My Portfolio</h2>
             <!-- Portfolio Items -->
-            <div class="grid md:grid-cols-2 gap-10 overflow-hidden">
+            <div class="grid md:grid-cols-2 gap-10 ">
                 <!-- portfolio 1 -->
                 <div data-aos="fade-right" data-aos-duration="1500" class="text-center">
                     <img src="project-1.png" alt="Portfolio 1"
-                        class="w-full mb-4 border-2 rounded-2xl shadow hover:shadow-lg transition">
-                    <h3 class="text-xl font-semibold mb-2">Portfolio 01</h3>
+                        class="w-full mb-4 border-2 rounded-3xl  outline-offset-2 outline  outline-gray-500 p-2">
+                    <h3 class="text-xl font-semibold mb-2 font">Portfolio 01</h3>
                     <p class="text-sm text-gray-500">
                         This construction project focuses on building modern, sustainable infrastructure with quality
                         materials, safety measures, and timely project delivery.
@@ -366,8 +282,8 @@
                 <!-- portfolio 2 -->
                 <div data-aos="fade-left" data-aos-duration="1500" class="text-center">
                     <img src="project-2.png" alt="Portfolio 2"
-                        class="w-full  border-2 rounded-2xl shadow hover:shadow-lg transition mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Portfolio 02</h3>
+                        class="w-full mb-4  border-2 rounded-3xl  outline-offset-2 outline  outline-gray-500 p-2">
+                    <h3 class="text-xl font-semibold mb-2 font">Portfolio 02</h3>
                     <p class="text-sm text-gray-500">
                         This food project aims to deliver healthy, hygienic, and affordable meals using fresh
                         ingredients, ensuring taste, nutrition, and sustainability.
@@ -377,45 +293,130 @@
             <!--  Button -->
             <div class="mt-8 flex justify-center">
                 <button
-                    class="bg-black hover:bg-gray-400 text-white hover:text-black duration-300 font-medium py-2 px-6 rounded">
+                    class="font bg-black hover:bg-gray-400 text-white hover:text-black duration-300 font-medium py-2 px-6 rounded">
                     <a href="https://github.com/">Know more</a>
                 </button>
             </div>
         </div>
     </section>
 
+    <section class=" py-12 overflow-hidden bg-[#091e33]">
+        <div data-aos="fade-up" data-aos-duration="2000"
+            class="max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8  my-4 overflow-hidden">
+            <div class="owl-carousel owl-theme MB-4  ">
+                <div data-aos="zoom-in" data-aos-duration="500" class="item">
+                    <div class=" flex justify-center">
+                        <div class="w-[100px]">
+                            <!-- <img class="" width="100%"
+                                src="html-logo.png"
+                                alt="HTML"> -->
+                            <p class="text-white text-4xl font-bold font">HTML</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="900" class="item ">
+                    <div class="flex justify-center">
+                        <div class="w-[100px]">
+                            <!-- <img class="" width="100%"
+                                src="css-logo.png"
+                                alt="CSS"> -->
+                            <p class="text-white text-4xl font-bold font">CSS</p>
 
-    <section id="Contact" class=" py-[100px] overflow-hidden">
-        <div 
-            class="max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8 sm:px-6 ">
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="1300" class="item">
+                    <div class=" flex justify-center">
+                        <div class="w-[100px]">
+                            <!-- <img class="" width="100%" src="tailwind-logo.png" alt="Tailwind"> -->
+                            <p class="text-white text-4xl font-bold font">TAILWIND</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="1700" class="item">
+                    <div class=" flex justify-center">
+                        <div class="w-[120px]">
+                            <!-- <img class="" width="100%" src="http://pluspng.com/img-png/bootstrap-png-bootstrap-512.png"
+                                alt="Bootstrap"> -->
+                            <p class="text-white text-4xl font-bold font">BOOTSTRAP</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="2000" class="item">
+                    <div class=" flex justify-center">
+                        <div class="w-[100px]">
+                            <!-- <img class="" width="100%"
+                                src="java-logo.png"
+                                alt="JavaScript"> -->
+                            <p class="text-white text-4xl font-bold font">JAVASCRIPT</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="2000" class="item">
+                    <div class=" flex justify-center">
+                        <div class="w-[100px]">
+                            <!-- <img class="" width="100%" src="jquery-logo.png" alt="Jquery"> -->
+                            <p class="text-white text-4xl font-bold font">JQUERY</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="2000" class="item">
+                    <div class=" flex justify-center">
+                        <div class="w-[180px]">
+                            <!-- <img class="" width="100%"
+                                src="wordpress-logo.png"
+                                alt="Wordpress"> -->
+                            <p class="text-white text-4xl font-bold font">WORDPRESS</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="2000" class="item ">
+                    <div class=" flex justify-center">
+                        <div class="w-[100px]">
+                            <!-- <img class="" width="100%" src="github-logo.png" alt="GitHub"> -->
+                            <p class="text-white text-4xl font-bold font">Github</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contact" class=" py-[100px] overflow-hidden bg-[#e0e1dc] ">
+        <div class="max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8 sm:px-6">
             <!-- contact heading -->
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Contact me</h2>
+            <h2 class="text-3xl font-bold text-center text-black mb-10 font">Contact me</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <!-- Phone -->
                 <div data-aos="fade-up" data-aos-duration="900"
-                    class="bg-gray-100 p-6 rounded-2xl hover:border border-gray-300 shadow hover:shadow-lg transition cursor-pointer">
-                    <div class="text-green-600 text-4xl mb-4">
+                    class=" p-6 rounded-2xl hover:border border-2 border-gray-300 shadow hover:shadow-lg transition cursor-pointer">
+                    <div class=" text-4xl mb-4">
                         <i class="fa-solid fa-phone" style="color: #545454;"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">Phone</h3>
+                    <h3 class="text-xl font-semibold mb-2 font">Phone</h3>
                     <p class="text-gray-600">+91 96382 11368</p>
                 </div>
                 <!-- Email -->
                 <div data-aos="fade-up" data-aos-duration="1500"
-                    class="bg-gray-100 p-6 rounded-2xl hover:border border-gray-300 shadow hover:shadow-lg transition cursor-pointer">
-                    <div class="text-indigo-600 text-4xl mb-4">
+                    class="bg-[#e0e1dc] p-6 rounded-2xl border-2 hover:border border-gray-300 shadow hover:shadow-lg transition cursor-pointer">
+                    <div class=" text-4xl mb-4">
                         <i class="fa-solid fa-envelope" style="color: #545454;"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">Email</h3>
+                    <h3 class="text-xl font-semibold mb-2 font">Email</h3>
                     <p class="text-gray-600">jethvakalpesh9638@gmail.com</p>
                 </div>
                 <!-- Location -->
                 <div data-aos="fade-up" data-aos-duration="2100"
-                    class="bg-gray-100 p-6 rounded-2xl hover:border border-gray-300 shadow hover:shadow-lg transition cursor-pointer">
-                    <div class="text-red-600 text-4xl mb-4">
+                    class="bg-[#e0e1dc] p-6 rounded-2xl border-2 hover:border border-gray-300 shadow hover:shadow-lg transition cursor-pointer">
+                    <div class=" text-4xl mb-4">
                         <i class="fa-solid fa-location-dot" style="color: #545454;"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-2">Location</h3>
+                    <h3 class="text-xl font-semibold mb-2 font">Location</h3>
                     <p class="text-gray-600">Suman sangath, utran, surat</p>
                 </div>
             </div>
@@ -423,11 +424,13 @@
     </section>
 
 
-    <footer class="bg-gray-300 text-black ">
+
+
+    <footer class="bg-[#091e33] text-black ">
         <div class="max-w-screen-xl mx-auto py-[50px] px-[15px] md:px-6 lg:px-8">
             <!-- footer Heading -->
             <div class="mb-4">
-                <h2 class="text-3xl text-center font-bold">My Portfolio</h2>
+                <h2 class="text-3xl text-center text-white font-bold font">MyPortfolio</h2>
             </div>
             <!-- footer bottom text-->
             <p class="text-md text-gray-500 text-center ">
@@ -480,6 +483,26 @@
                 }
             }
         })
+    </script>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+                // a.classList.add('scrolled-color')
+            } else {
+                header.classList.remove('scrolled');
+            }
+            const headers = document.querySelectorAll('.abc');
+            headers.forEach(function (header) {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled-color');
+                } else {
+                    header.classList.remove('scrolled-color');
+                }
+            });
+        });
     </script>
 
 
