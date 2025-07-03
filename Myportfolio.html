@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My_Portfolio</title>
 
+    <link rel="stylesheet" href="Myportfolio.css">
+
     <!-- tailwind css link -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -27,53 +29,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Grey+Qo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,500&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Syne:wght@400..800&family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Underdog&display=swap"
         rel="stylesheet">
-
-    <style>
-        .static-header {
-            position: fixed;
-            top: 0%;
-            width: 100%;
-            z-index: 1000;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* owl carousel slider button */
-        .owl-theme .owl-nav .owl-prev,
-        .owl-theme .owl-nav .owl-next {
-            width: 30px;
-            height: 30px;
-            background-color: rgb(207, 207, 207) !important;
-        }
-
-        .owl-theme .owl-nav .owl-prev:hover,
-        .owl-theme .owl-nav .owl-next:hover {
-            background-color: rgb(82, 82, 82) !important;
-        }
-
-        /* .owl-carousel .item img {
-            filter: grayscale(10);
-        }
-
-        .owl-carousel .item img:hover {
-            filter: grayscale(0);
-        } */
-
-        .font {
-            font-family: "Syne", sans-serif;
-
-        }
-
-        .scrolled {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        .scrolled-color {
-            color: white !important;
-        }
-    </style>
 
 </head>
 
@@ -135,14 +90,14 @@
                     <div data-aos="fade-left" data-aos-duration="1500"
                         class="relative w-fit mx-auto md:top-[33px] top-[65px]">
                         <img src="my_photo.png" alt="Profile"
-                            class="relative w-full max-w-xs mx-auto rounded-md  cursor-pointer z-10">
+                            class="relative w-full max-w-xs mx-auto rounded-2xl border-[0.5px] border-[#091e33] cursor-pointer z-10">
                         <!-- Border box 10px -->
                         <div data-aos="fade-down" data-aos-duration="1500"
-                            class="absolute rounded-md top-[-50px] left-[-50px] w-[330px] h-[400px] border-4 border-gray-500 z-10">
+                            class="absolute rounded-2xl top-[-50px] left-[-50px] w-[330px] h-[400px] border-4 border-gray-500 z-10">
                         </div>
                         <!-- boder box 10px -->
                         <div data-aos="fade-up" data-aos-duration="1500"
-                            class="absolute rounded-md top-[50px] left-[40px] w-[330px] h-[380px] border-4 border-black z-0">
+                            class="absolute rounded-2xl top-[50px] left-[40px] w-[330px] h-[380px] border-4 border-black z-0">
                         </div>
                     </div>
                 </div>
@@ -219,6 +174,8 @@
 
     <section class="overflow-hidden">
         <div class="bg-[#091e33] py-[100px]   overflow-hidden">
+            <h2 data-aos="fade-up" data-aos-duration="1500" class="text-4xl font-bold text-white text-center mb-8 font">Skills</h2>
+
             <div data-aos="fade-up" data-aos-duration="1500"
                 class="max-w-screen-xl px-[15px] md:px-6 lg:px-8 mx-auto  flex flex-col md:flex-row">
                 <!-- left : my skill image -->
@@ -230,7 +187,6 @@
                 <!-- right : my skill Content -->
                 <div class="w-full md:w-[60%] text-gray-800">
                     <div class="text-center">
-                        <h2 class="text-3xl font-bold border-2 py-2 text-white mb-6 font"> My Skills</h2>
                         <div class="grid grid-cols-2 gap-4 text-gray-800 ">
                             <span data-aos="fade-up" data-aos-duration="1500"
                                 class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">HTML</span>
@@ -262,7 +218,7 @@
     </section>
 
 
-    <section id="portfolio " class="bg-[#e0e1dc]">
+    <section id="portfolio" class="bg-[#e0e1dc]">
         <div data-aos="zoom-in" data-aos-duration="1500"
             class=" py-[100px] max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8 ">
             <!-- left : portfolio  Heading -->
@@ -303,10 +259,10 @@
     <section class=" py-12 overflow-hidden bg-[#091e33]">
         <div data-aos="fade-up" data-aos-duration="2000"
             class="max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8  my-4 overflow-hidden">
-            <div class="owl-carousel owl-theme MB-4  ">
-                <div data-aos="zoom-in" data-aos-duration="500" class="item">
+            <div class="owl-carousel owl-theme  ">
+                <div data-aos="zoom-in" data-aos-duration="500" class="item mb-4">
                     <div class=" flex justify-center">
-                        <div class="w-[100px]">
+                        <div class="w-[50px]">
                             <!-- <img class="" width="100%"
                                 src="html-logo.png"
                                 alt="HTML"> -->
@@ -316,7 +272,7 @@
                 </div>
                 <div data-aos="zoom-in" data-aos-duration="900" class="item ">
                     <div class="flex justify-center">
-                        <div class="w-[100px]">
+                        <div class="w-[60px]">
                             <!-- <img class="" width="100%"
                                 src="css-logo.png"
                                 alt="CSS"> -->
@@ -327,7 +283,7 @@
                 </div>
                 <div data-aos="zoom-in" data-aos-duration="1300" class="item">
                     <div class=" flex justify-center">
-                        <div class="w-[100px]">
+                        <div class="">
                             <!-- <img class="" width="100%" src="tailwind-logo.png" alt="Tailwind"> -->
                             <p class="text-white text-4xl font-bold font">TAILWIND</p>
 
@@ -336,7 +292,7 @@
                 </div>
                 <div data-aos="zoom-in" data-aos-duration="1700" class="item">
                     <div class=" flex justify-center">
-                        <div class="w-[120px]">
+                        <div class="">
                             <!-- <img class="" width="100%" src="http://pluspng.com/img-png/bootstrap-png-bootstrap-512.png"
                                 alt="Bootstrap"> -->
                             <p class="text-white text-4xl font-bold font">BOOTSTRAP</p>
@@ -346,7 +302,7 @@
                 </div>
                 <div data-aos="zoom-in" data-aos-duration="2000" class="item">
                     <div class=" flex justify-center">
-                        <div class="w-[100px]">
+                        <div class="">
                             <!-- <img class="" width="100%"
                                 src="java-logo.png"
                                 alt="JavaScript"> -->
@@ -357,7 +313,7 @@
                 </div>
                 <div data-aos="zoom-in" data-aos-duration="2000" class="item">
                     <div class=" flex justify-center">
-                        <div class="w-[100px]">
+                        <div class="">
                             <!-- <img class="" width="100%" src="jquery-logo.png" alt="Jquery"> -->
                             <p class="text-white text-4xl font-bold font">JQUERY</p>
 
@@ -366,7 +322,7 @@
                 </div>
                 <div data-aos="zoom-in" data-aos-duration="2000" class="item">
                     <div class=" flex justify-center">
-                        <div class="w-[180px]">
+                        <div class="">
                             <!-- <img class="" width="100%"
                                 src="wordpress-logo.png"
                                 alt="Wordpress"> -->
@@ -377,7 +333,7 @@
                 </div>
                 <div data-aos="zoom-in" data-aos-duration="2000" class="item ">
                     <div class=" flex justify-center">
-                        <div class="w-[100px]">
+                        <div class="">
                             <!-- <img class="" width="100%" src="github-logo.png" alt="GitHub"> -->
                             <p class="text-white text-4xl font-bold font">Github</p>
                         </div>
@@ -390,7 +346,7 @@
     <section id="Contact" class=" py-[100px] overflow-hidden bg-[#e0e1dc] ">
         <div class="max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8 sm:px-6">
             <!-- contact heading -->
-            <h2 class="text-3xl font-bold text-center text-black mb-10 font">Contact me</h2>
+            <h2 data-aos="fade-up" data-aos-duration="1500" class="text-3xl font-bold text-center text-black mb-10 font">Contact me</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <!-- Phone -->
                 <div data-aos="fade-up" data-aos-duration="900"
@@ -422,9 +378,7 @@
             </div>
         </div>
     </section>
-
-
-
+    
 
     <footer class="bg-[#091e33] text-black ">
         <div class="max-w-screen-xl mx-auto py-[50px] px-[15px] md:px-6 lg:px-8">
