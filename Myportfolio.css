@@ -38,3 +38,31 @@ html {
 .scrolled-color {
     color: white !important;
 }
+
+ /* loader page  */
+ #loader {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     /* background: #111; */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     z-index: 9999;
+          background-color: #e0e1dc;
+
+ }
+
+ #counter {
+     font-size: 4rem;
+     font-weight: bold;
+     color: #091e33;
+ }
+
+ /* Main content */
+ #content {
+     display: none;
+ }

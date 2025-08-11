@@ -34,366 +34,379 @@
 </head>
 
 <body class="scroll-smooth">
-    <!-- Header -->
-    <header class=" static-header header transition duration-300 ease-in">
-        <div class="max-w-screen-xl mx-auto  py-4 flex items-center justify-between px-[15px] ">
-            <!-- Logo -->
-            <div class="text-3xl font-bold text-black cursor-pointer font abc">
-                MyPortfolio
+
+    <div id="loader">
+        <div id="counter">0%</div>
+    </div>
+    <div id="content">
+        <!-- Header -->
+        <header class=" static-header header transition duration-300 ease-in">
+            <div class="max-w-screen-xl mx-auto  py-4 flex items-center justify-between px-[15px] ">
+                <!-- Logo -->
+                <div class="text-3xl font-bold text-black cursor-pointer font abc">
+                    MyPortfolio
+                </div>
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex gap-6 font text-gray-700">
+                    <a href="#home" class="font-bold text-black hover:text-gray-500 abc ">Home</a>
+                    <a href="#About" class="font-bold text-black hover:text-gray-500 abc ">About</a>
+                    <a href="#portfolio" class="font-bold text-black hover:text-gray-500 abc">Portfolio</a>
+                    <a href="#Contact" class="font-bold text-black hover:text-gray-500 abc  ">Contact</a>
+                </nav>
+                <!-- Mobile Menu Toggle -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-700 text-2xl focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
             </div>
-            <!-- Desktop Menu -->
-            <nav class="hidden md:flex gap-6 font text-gray-700">
-                <a href="#home" class="font-bold text-black hover:text-gray-500 abc ">Home</a>
-                <a href="#About" class="font-bold text-black hover:text-gray-500 abc ">About</a>
-                <a href="#portfolio" class="font-bold text-black hover:text-gray-500 abc">Portfolio</a>
-                <a href="#Contact" class="font-bold text-black hover:text-gray-500 abc  ">Contact</a>
-            </nav>
-            <!-- Mobile Menu Toggle -->
-            <div class="md:hidden">
-                <button id="menu-btn" class="text-gray-700 text-2xl focus:outline-none">
-                    <i class="fas fa-bars"></i>
-                </button>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden px-4 pb-4 hidden font">
+                <a href="#home" class="block py-2 font-semibold hover:text-gray-500 text-white">Home</a>
+                <a href="#About" class="block py-2 font-semibold hover:text-gray-500 text-white">About</a>
+                <a href="#portfolio" class="block py-2 font-semibold hover:text-gray-500 text-white">Portfolio</a>
+                <a href="#Contact" class="block py-2 font-semibold hover:text-gray-500 text-white">Contact</a>
             </div>
-        </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden px-4 pb-4 hidden font">
-            <a href="#home" class="block py-2 font-semibold hover:text-gray-500 text-white">Home</a>
-            <a href="#About" class="block py-2 font-semibold hover:text-gray-500 text-white">About</a>
-            <a href="#portfolio" class="block py-2 font-semibold hover:text-gray-500 text-white">Portfolio</a>
-            <a href="#Contact" class="block py-2 font-semibold hover:text-gray-500 text-white">Contact</a>
-        </div>
-    </header>
+        </header>
 
 
-    <section class="overflow-hidden">
-        <section id="home" class="bg-[#e0e1dc] py-[120px] px-[15px] md:px-6 lg:px-8">
-            <div class="max-w-screen-xl mx-auto ">
-                <div class="grid md:grid-cols-2  items-center ">
-                    <!-- Left text Content -->
-                    <div data-aos="fade-up" data-aos-duration="1500" class="bg-[#e0e1dc] p-[100px] ">
-                        <p class="text-sm text-gray-500 mb-2 font">Welcome</p>
-                        <h1 class="text-4xl font-bold text-black mb-4 font">
-                            I have <span class="text-gray-500">Creative</span> <br>
-                            <span class="text-gray-500">Design</span> Experience
-                        </h1>
-                        <p class="text-gray-500 mb-6 ">
-                            I'm kalpesh, a creative Product Designer. I've been helping businesses to solve their
-                            problems.
-                        </p>
-                        <div class="flex gap-4">
-                            <button
-                                class="font bg-[#091e33] hover:bg-[#505e68] text-white duration-300 font-medium py-2 px-6 rounded">
-                                Contact me
-                            </button>
+        <section class="overflow-hidden">
+            <section id="home" class="bg-[#e0e1dc] py-[120px] px-[15px] md:px-6 lg:px-8">
+                <div class="max-w-screen-xl mx-auto ">
+                    <div class="grid md:grid-cols-2  items-center ">
+                        <!-- Left text Content -->
+                        <div data-aos="fade-up" data-aos-duration="1500" class="bg-[#e0e1dc] p-[100px] ">
+                            <p class="text-sm text-gray-500 mb-2 font">Welcome</p>
+                            <h1 class="text-4xl font-bold text-black mb-4 font">
+                                I have <span class="text-gray-500">Creative</span> <br>
+                                <span class="text-gray-500">Design</span> Experience
+                            </h1>
+                            <p class="text-gray-500 mb-6 ">
+                                I'm kalpesh, a creative Product Designer. I've been helping businesses to solve their
+                                problems.
+                            </p>
+                            <div class="flex gap-4">
+                                <button
+                                    class="font bg-[#091e33] hover:bg-[#505e68] text-white duration-300 font-medium py-2 px-6 rounded">
+                                    Contact me
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Right Image -->
+                        <div data-aos="fade-left" data-aos-duration="1500"
+                            class="relative w-fit mx-auto md:top-[33px] top-[65px]">
+                            <img src="my_photo.png" alt="Profile"
+                                class="relative w-full max-w-xs mx-auto rounded-2xl border-[0.5px] border-[#091e33] cursor-pointer z-10">
+                            <!-- Border box 10px -->
+                            <div data-aos="fade-down" data-aos-duration="1500"
+                                class="absolute rounded-2xl top-[-50px] left-[-50px] w-[330px] h-[400px] border-4 border-gray-500 z-10">
+                            </div>
+                            <!-- boder box 10px -->
+                            <div data-aos="fade-up" data-aos-duration="1500"
+                                class="absolute rounded-2xl top-[50px] left-[40px] w-[330px] h-[380px] border-4 border-black z-0">
+                            </div>
                         </div>
                     </div>
-                    <!-- Right Image -->
-                    <div data-aos="fade-left" data-aos-duration="1500"
-                        class="relative w-fit mx-auto md:top-[33px] top-[65px]">
-                        <img src="my_photo.png" alt="Profile"
-                            class="relative w-full max-w-xs mx-auto rounded-2xl border-[0.5px] border-[#091e33] cursor-pointer z-10">
-                        <!-- Border box 10px -->
-                        <div data-aos="fade-down" data-aos-duration="1500"
-                            class="absolute rounded-2xl top-[-50px] left-[-50px] w-[330px] h-[400px] border-4 border-gray-500 z-10">
+                </div>
+            </section>
+        </section>
+
+
+        <section id="About" class="bg-[#091e33] py-[100px] overflow-hidden">
+            <div data-aos="fade-up" data-aos-duration="1500"
+                class="max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+                <!-- Left - about image -->
+                <div class="w-full md:w-[30%] mb-6 md:mb-0 md:mr-10">
+                    <img src="https://img.freepik.com/premium-vector/vector-person-holding-showing-cartoon-illustration-paper-board-document_1213699-3108.jpg"
+                        alt="Profile"
+                        class="w-full mx-auto rounded-3xl  outline-offset-2 outline  outline-gray-500 p-4 shadow hover:shadow-lg transition duration-300">
+                </div>
+                <!-- Right - about content -->
+                <div class="w-full md:w-[70%] text-white ">
+                    <h2 class="text-4xl font-bold  mb-6 flex items-center gap-2 font">
+                        About me
+                    </h2>
+                    <p classoutline="text-base mb-10 leading-relaxed">
+                        "I am a passionate and creative web designer with a strong foundation in HTML, CSS, Tailwind
+                        CSS,
+                        and JavaScript. I focus on clean design, user experience, and cross-browser compatibility. I’m
+                        always eager to learn new technologies and improve my skills to build modern, user-friendly web
+                        interfaces. I aim to contribute to real-world projects where I can grow and make a meaningful
+                        impact
+                        through my designs."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class=" overflow-hidden py-12 bg-[#e0e1dc]">
+            <div data-aos="zoom-in" data-aos-duration="1500"
+                class="max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8 flex flex-col md:flex-row    overflow-hidden py-[100px] ">
+                <!-- Right :  My aducation Content-->
+                <div data-aos="fade-right" data-aos-duration="1500"
+                    class="w-full md:w-[50%] text-gray-800 flex justify-center">
+                    <div class="w-[50%] ">
+                        <h2 class="text-3xl font-bold text-black mb-6"> My Education</h2>
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold text-gray-800 font">Web Design Course</h3>
+                            <p class="text-gray-600">Creative & Multimedia Institute
+                                <br> 2024-25
+                            </p>
                         </div>
-                        <!-- boder box 10px -->
-                        <div data-aos="fade-up" data-aos-duration="1500"
-                            class="absolute rounded-2xl top-[50px] left-[40px] w-[330px] h-[380px] border-4 border-black z-0">
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold text-gray-800 font"> BACHELOR OF COMMERCE </h3>
+                            <p class="text-gray-600">J.z. Shah Arts & H.p. Desai Commerce
+                                college , Amroli ,surat
+                                <br>2021-24
+                            </p>
+                        </div>
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold text-gray-800 font"> HSC</h3>
+                            <p class="text-gray-600">Mauni International School
+                                utran,surat
+                                <br>2021-22
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- right : my aducation image  -->
+                <div data-aos="fade-left" data-aos-duration="1500" class="w-full md:w-[50%] mx-4 ">
+                    <img src="https://www.pngplay.com/wp-content/uploads/6/Education-Icon-Background-PNG-Image.png"
+                        alt="Profile"
+                        class="relative w-full max-w-md mx-auto rounded-3xl outline-offset-2 outline  outline-gray-500 p-4">
+                </div>
+            </div>
+        </section>
+
+        <section class="overflow-hidden">
+            <div class="bg-[#091e33] py-[100px]   overflow-hidden">
+                <h2 data-aos="fade-up" data-aos-duration="1500"
+                    class="text-4xl font-bold text-white text-center mb-8 font">Skills</h2>
+
+                <div data-aos="fade-up" data-aos-duration="1500"
+                    class="max-w-screen-xl px-[15px] md:px-6 lg:px-8 mx-auto  flex flex-col md:flex-row">
+                    <!-- left : my skill image -->
+                    <div class="w-full md:w-[40%] mr-[45px] mb-4  border-gray-400">
+                        <img src="https://avatars.mds.yandex.net/i?id=ece18441a835b46d32a8dcf86921440b79a5d4fa-10555004-images-thumbs&n=13"
+                            alt="Profile"
+                            class="relative  w-full h-[340px] max-w-xs mx-auto rounded-3xl  outline-offset-2 outline  outline-gray-500 p-4">
+                    </div>
+                    <!-- right : my skill Content -->
+                    <div class="w-full md:w-[60%] text-gray-800">
+                        <div class="text-center">
+                            <div class="grid grid-cols-2 gap-4 text-gray-800 ">
+                                <span data-aos="fade-up" data-aos-duration="1500"
+                                    class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">HTML</span>
+                                <span data-aos="fade-left" data-aos-duration="1500"
+                                    class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">CSS</span>
+                                <span data-aos="fade-up" data-aos-duration="1500"
+                                    class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">Tailwind CSS</span>
+                                <span data-aos="fade-left" data-aos-duration="1500"
+                                    class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">Bootstrap</span>
+                                <span data-aos="fade-up" data-aos-duration="1500"
+                                    class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">JavaScript</span>
+                                <span data-aos="fade-left" data-aos-duration="1500"
+                                    class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">Jquery</span>
+                                <span data-aos="fade-up" data-aos-duration="1500"
+                                    class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">Wordpress</span>
+                                <span data-aos="fade-left" data-aos-duration="1500"
+                                    class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">GitHub</span>
+                                <span data-aos="fade-up" data-aos-duration="1500"
+                                    class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">Figma</span>
+                                <span data-aos="fade-left" data-aos-duration="1500"
+                                    class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">Photoshop</span>
+                                <span data-aos="fade-up" data-aos-duration="1500"
+                                    class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">Illustator</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </section>
 
 
-    <section id="About" class="bg-[#091e33] py-[100px] overflow-hidden">
-        <div data-aos="fade-up" data-aos-duration="1500"
-            class="max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8 flex flex-col md:flex-row items-center">
-            <!-- Left - about image -->
-            <div class="w-full md:w-[30%] mb-6 md:mb-0 md:mr-10">
-                <img src="https://img.freepik.com/premium-vector/vector-person-holding-showing-cartoon-illustration-paper-board-document_1213699-3108.jpg"
-                    alt="Profile"
-                    class="w-full mx-auto rounded-3xl  outline-offset-2 outline  outline-gray-500 p-4 shadow hover:shadow-lg transition duration-300">
-            </div>
-            <!-- Right - about content -->
-            <div class="w-full md:w-[70%] text-white ">
-                <h2 class="text-4xl font-bold  mb-6 flex items-center gap-2 font">
-                    About me
-                </h2>
-                <p classoutline="text-base mb-10 leading-relaxed">
-                    "I am a passionate and creative web designer with a strong foundation in HTML, CSS, Tailwind CSS,
-                    and JavaScript. I focus on clean design, user experience, and cross-browser compatibility. I’m
-                    always eager to learn new technologies and improve my skills to build modern, user-friendly web
-                    interfaces. I aim to contribute to real-world projects where I can grow and make a meaningful impact
-                    through my designs."
-                </p>
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class=" overflow-hidden py-12 bg-[#e0e1dc]">
-        <div data-aos="zoom-in" data-aos-duration="1500"
-            class="max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8 flex flex-col md:flex-row    overflow-hidden py-[100px] ">
-            <!-- Right :  My aducation Content-->
-            <div data-aos="fade-right" data-aos-duration="1500"
-                class="w-full md:w-[50%] text-gray-800 flex justify-center">
-                <div class="w-[50%] ">
-                    <h2 class="text-3xl font-bold text-black mb-6"> My Education</h2>
-                    <div class="mb-6">
-                        <h3 class="text-xl font-semibold text-gray-800 font">Web Design Course</h3>
-                        <p class="text-gray-600">Creative & Multimedia Institute
-                            <br> 2024-25
+        <section id="portfolio" class="bg-[#e0e1dc]">
+            <div data-aos="zoom-in" data-aos-duration="1500"
+                class=" py-[100px] max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8 ">
+                <!-- left : portfolio  Heading -->
+                <h2 class="text-4xl font-bold text-center mb-8 font">My Portfolio</h2>
+                <!-- Portfolio Items -->
+                <div class="grid md:grid-cols-2 gap-10 ">
+                    <!-- portfolio 1 -->
+                    <div data-aos="fade-right" data-aos-duration="1500" class="text-center">
+                        <img src="project-1.png" alt="Portfolio 1"
+                            class="w-full mb-4 border-2 rounded-3xl  outline-offset-2 outline  outline-gray-500 p-2">
+                        <h3 class="text-xl font-semibold mb-2 font">Portfolio 01</h3>
+                        <p class="text-sm text-gray-500">
+                            This construction project focuses on building modern, sustainable infrastructure with
+                            quality
+                            materials, safety measures, and timely project delivery.
                         </p>
                     </div>
-                    <div class="mb-6">
-                        <h3 class="text-xl font-semibold text-gray-800 font"> BACHELOR OF COMMERCE </h3>
-                        <p class="text-gray-600">J.z. Shah Arts & H.p. Desai Commerce
-                            college , Amroli ,surat
-                            <br>2021-24
-                        </p>
-                    </div>
-                    <div class="mb-6">
-                        <h3 class="text-xl font-semibold text-gray-800 font"> HSC</h3>
-                        <p class="text-gray-600">Mauni International School
-                            utran,surat
-                            <br>2021-22
+                    <!-- portfolio 2 -->
+                    <div data-aos="fade-left" data-aos-duration="1500" class="text-center">
+                        <img src="project-2.png" alt="Portfolio 2"
+                            class="w-full mb-4  border-2 rounded-3xl  outline-offset-2 outline  outline-gray-500 p-2">
+                        <h3 class="text-xl font-semibold mb-2 font">Portfolio 02</h3>
+                        <p class="text-sm text-gray-500">
+                            This food project aims to deliver healthy, hygienic, and affordable meals using fresh
+                            ingredients, ensuring taste, nutrition, and sustainability.
                         </p>
                     </div>
                 </div>
-            </div>
-            <!-- right : my aducation image  -->
-            <div data-aos="fade-left" data-aos-duration="1500" class="w-full md:w-[50%] mx-4 ">
-                <img src="https://www.pngplay.com/wp-content/uploads/6/Education-Icon-Background-PNG-Image.png"
-                    alt="Profile"
-                    class="relative w-full max-w-md mx-auto rounded-3xl outline-offset-2 outline  outline-gray-500 p-4">
-            </div>
-        </div>
-    </section>
-
-    <section class="overflow-hidden">
-        <div class="bg-[#091e33] py-[100px]   overflow-hidden">
-            <h2 data-aos="fade-up" data-aos-duration="1500" class="text-4xl font-bold text-white text-center mb-8 font">Skills</h2>
-
-            <div data-aos="fade-up" data-aos-duration="1500"
-                class="max-w-screen-xl px-[15px] md:px-6 lg:px-8 mx-auto  flex flex-col md:flex-row">
-                <!-- left : my skill image -->
-                <div class="w-full md:w-[40%] mr-[45px] mb-4  border-gray-400">
-                    <img src="https://avatars.mds.yandex.net/i?id=ece18441a835b46d32a8dcf86921440b79a5d4fa-10555004-images-thumbs&n=13"
-                        alt="Profile"
-                        class="relative  w-full h-[340px] max-w-xs mx-auto rounded-3xl  outline-offset-2 outline  outline-gray-500 p-4">
-                </div>
-                <!-- right : my skill Content -->
-                <div class="w-full md:w-[60%] text-gray-800">
-                    <div class="text-center">
-                        <div class="grid grid-cols-2 gap-4 text-gray-800 ">
-                            <span data-aos="fade-up" data-aos-duration="1500"
-                                class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">HTML</span>
-                            <span data-aos="fade-left" data-aos-duration="1500"
-                                class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">CSS</span>
-                            <span data-aos="fade-up" data-aos-duration="1500"
-                                class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">Tailwind CSS</span>
-                            <span data-aos="fade-left" data-aos-duration="1500"
-                                class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">Bootstrap</span>
-                            <span data-aos="fade-up" data-aos-duration="1500"
-                                class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">JavaScript</span>
-                            <span data-aos="fade-left" data-aos-duration="1500"
-                                class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">Jquery</span>
-                            <span data-aos="fade-up" data-aos-duration="1500"
-                                class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">Wordpress</span>
-                            <span data-aos="fade-left" data-aos-duration="1500"
-                                class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">GitHub</span>
-                            <span data-aos="fade-up" data-aos-duration="1500"
-                                class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">Figma</span>
-                            <span data-aos="fade-left" data-aos-duration="1500"
-                                class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">Photoshop</span>
-                            <span data-aos="fade-up" data-aos-duration="1500"
-                                class="bg-gray-50 px-4 py-2 border- rounded shadow text-center">Illustator</span>
-                        </div>
-                    </div>
+                <!--  Button -->
+                <div class="mt-8 flex justify-center">
+                    <button
+                        class="font bg-black hover:bg-gray-400 text-white hover:text-black duration-300 font-medium py-2 px-6 rounded">
+                        <a href="https://github.com/">Know more</a>
+                    </button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-
-    <section id="portfolio" class="bg-[#e0e1dc]">
-        <div data-aos="zoom-in" data-aos-duration="1500"
-            class=" py-[100px] max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8 ">
-            <!-- left : portfolio  Heading -->
-            <h2 class="text-4xl font-bold text-center mb-8 font">My Portfolio</h2>
-            <!-- Portfolio Items -->
-            <div class="grid md:grid-cols-2 gap-10 ">
-                <!-- portfolio 1 -->
-                <div data-aos="fade-right" data-aos-duration="1500" class="text-center">
-                    <img src="project-1.png" alt="Portfolio 1"
-                        class="w-full mb-4 border-2 rounded-3xl  outline-offset-2 outline  outline-gray-500 p-2">
-                    <h3 class="text-xl font-semibold mb-2 font">Portfolio 01</h3>
-                    <p class="text-sm text-gray-500">
-                        This construction project focuses on building modern, sustainable infrastructure with quality
-                        materials, safety measures, and timely project delivery.
-                    </p>
-                </div>
-                <!-- portfolio 2 -->
-                <div data-aos="fade-left" data-aos-duration="1500" class="text-center">
-                    <img src="project-2.png" alt="Portfolio 2"
-                        class="w-full mb-4  border-2 rounded-3xl  outline-offset-2 outline  outline-gray-500 p-2">
-                    <h3 class="text-xl font-semibold mb-2 font">Portfolio 02</h3>
-                    <p class="text-sm text-gray-500">
-                        This food project aims to deliver healthy, hygienic, and affordable meals using fresh
-                        ingredients, ensuring taste, nutrition, and sustainability.
-                    </p>
-                </div>
-            </div>
-            <!--  Button -->
-            <div class="mt-8 flex justify-center">
-                <button
-                    class="font bg-black hover:bg-gray-400 text-white hover:text-black duration-300 font-medium py-2 px-6 rounded">
-                    <a href="https://github.com/">Know more</a>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <section class=" py-12 overflow-hidden bg-[#091e33]">
-        <div data-aos="fade-up" data-aos-duration="2000"
-            class="max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8  my-4 overflow-hidden">
-            <div class="owl-carousel owl-theme  ">
-                <div data-aos="zoom-in" data-aos-duration="500" class="item mb-4">
-                    <div class=" flex justify-center">
-                        <div class="w-[50px]">
-                            <!-- <img class="" width="100%"
+        <section class=" py-12 overflow-hidden bg-[#091e33]">
+            <div data-aos="fade-up" data-aos-duration="2000"
+                class="max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8  my-4 overflow-hidden">
+                <div class="owl-carousel owl-theme  ">
+                    <div data-aos="zoom-in" data-aos-duration="500" class="item mb-4">
+                        <div class=" flex justify-center">
+                            <div class="w-[50px]">
+                                <!-- <img class="" width="100%"
                                 src="html-logo.png"
                                 alt="HTML"> -->
-                            <p class="text-white text-4xl font-bold font">HTML</p>
+                                <p class="text-white text-4xl font-bold font">HTML</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="900" class="item ">
-                    <div class="flex justify-center">
-                        <div class="w-[60px]">
-                            <!-- <img class="" width="100%"
+                    <div data-aos="zoom-in" data-aos-duration="900" class="item ">
+                        <div class="flex justify-center">
+                            <div class="w-[60px]">
+                                <!-- <img class="" width="100%"
                                 src="css-logo.png"
                                 alt="CSS"> -->
-                            <p class="text-white text-4xl font-bold font">CSS</p>
+                                <p class="text-white text-4xl font-bold font">CSS</p>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="1300" class="item">
-                    <div class=" flex justify-center">
-                        <div class="">
-                            <!-- <img class="" width="100%" src="tailwind-logo.png" alt="Tailwind"> -->
-                            <p class="text-white text-4xl font-bold font">TAILWIND</p>
+                    <div data-aos="zoom-in" data-aos-duration="1300" class="item">
+                        <div class=" flex justify-center">
+                            <div class="">
+                                <!-- <img class="" width="100%" src="tailwind-logo.png" alt="Tailwind"> -->
+                                <p class="text-white text-4xl font-bold font">TAILWIND</p>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="1700" class="item">
-                    <div class=" flex justify-center">
-                        <div class="">
-                            <!-- <img class="" width="100%" src="http://pluspng.com/img-png/bootstrap-png-bootstrap-512.png"
+                    <div data-aos="zoom-in" data-aos-duration="1700" class="item">
+                        <div class=" flex justify-center">
+                            <div class="">
+                                <!-- <img class="" width="100%" src="http://pluspng.com/img-png/bootstrap-png-bootstrap-512.png"
                                 alt="Bootstrap"> -->
-                            <p class="text-white text-4xl font-bold font">BOOTSTRAP</p>
+                                <p class="text-white text-4xl font-bold font">BOOTSTRAP</p>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="2000" class="item">
-                    <div class=" flex justify-center">
-                        <div class="">
-                            <!-- <img class="" width="100%"
+                    <div data-aos="zoom-in" data-aos-duration="2000" class="item">
+                        <div class=" flex justify-center">
+                            <div class="">
+                                <!-- <img class="" width="100%"
                                 src="java-logo.png"
                                 alt="JavaScript"> -->
-                            <p class="text-white text-4xl font-bold font">JAVASCRIPT</p>
+                                <p class="text-white text-4xl font-bold font">JAVASCRIPT</p>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="2000" class="item">
-                    <div class=" flex justify-center">
-                        <div class="">
-                            <!-- <img class="" width="100%" src="jquery-logo.png" alt="Jquery"> -->
-                            <p class="text-white text-4xl font-bold font">JQUERY</p>
+                    <div data-aos="zoom-in" data-aos-duration="2000" class="item">
+                        <div class=" flex justify-center">
+                            <div class="">
+                                <!-- <img class="" width="100%" src="jquery-logo.png" alt="Jquery"> -->
+                                <p class="text-white text-4xl font-bold font">JQUERY</p>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div data-aos="zoom-in" data-aos-duration="2000" class="item">
-                    <div class=" flex justify-center">
-                        <div class="">
-                            <!-- <img class="" width="100%"
+                    <div data-aos="zoom-in" data-aos-duration="2000" class="item">
+                        <div class=" flex justify-center">
+                            <div class="">
+                                <!-- <img class="" width="100%"
                                 src="wordpress-logo.png"
                                 alt="Wordpress"> -->
-                            <p class="text-white text-4xl font-bold font">WORDPRESS</p>
+                                <p class="text-white text-4xl font-bold font">WORDPRESS</p>
 
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="2000" class="item ">
+                        <div class=" flex justify-center">
+                            <div class="">
+                                <!-- <img class="" width="100%" src="github-logo.png" alt="GitHub"> -->
+                                <p class="text-white text-4xl font-bold font">Github</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div data-aos="zoom-in" data-aos-duration="2000" class="item ">
-                    <div class=" flex justify-center">
-                        <div class="">
-                            <!-- <img class="" width="100%" src="github-logo.png" alt="GitHub"> -->
-                            <p class="text-white text-4xl font-bold font">Github</p>
+            </div>
+        </section>
+
+        <section id="Contact" class=" py-[100px] overflow-hidden bg-[#e0e1dc] ">
+            <div class="max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8 sm:px-6">
+                <!-- contact heading -->
+                <h2 data-aos="fade-up" data-aos-duration="1500"
+                    class="text-3xl font-bold text-center text-black mb-10 font">Contact me</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <!-- Phone -->
+                    <div data-aos="fade-up" data-aos-duration="900"
+                        class=" p-6 rounded-2xl hover:border border-2 border-gray-300 shadow hover:shadow-lg transition cursor-pointer">
+                        <div class=" text-4xl mb-4">
+                            <i class="fa-solid fa-phone" style="color: #545454;"></i>
                         </div>
+                        <h3 class="text-xl font-semibold mb-2 font">Phone</h3>
+                        <p class="text-gray-600">+91 96382 11368</p>
+                    </div>
+                    <!-- Email -->
+                    <div data-aos="fade-up" data-aos-duration="1500"
+                        class="bg-[#e0e1dc] p-6 rounded-2xl border-2 hover:border border-gray-300 shadow hover:shadow-lg transition cursor-pointer">
+                        <div class=" text-4xl mb-4">
+                            <i class="fa-solid fa-envelope" style="color: #545454;"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 font">Email</h3>
+                        <p class="text-gray-600">jethvakalpesh9638@gmail.com</p>
+                    </div>
+                    <!-- Location -->
+                    <div data-aos="fade-up" data-aos-duration="2100"
+                        class="bg-[#e0e1dc] p-6 rounded-2xl border-2 hover:border border-gray-300 shadow hover:shadow-lg transition cursor-pointer">
+                        <div class=" text-4xl mb-4">
+                            <i class="fa-solid fa-location-dot" style="color: #545454;"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 font">Location</h3>
+                        <p class="text-gray-600">Suman sangath, utran, surat</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="Contact" class=" py-[100px] overflow-hidden bg-[#e0e1dc] ">
-        <div class="max-w-screen-xl mx-auto px-[15px] md:px-6 lg:px-8 sm:px-6">
-            <!-- contact heading -->
-            <h2 data-aos="fade-up" data-aos-duration="1500" class="text-3xl font-bold text-center text-black mb-10 font">Contact me</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <!-- Phone -->
-                <div data-aos="fade-up" data-aos-duration="900"
-                    class=" p-6 rounded-2xl hover:border border-2 border-gray-300 shadow hover:shadow-lg transition cursor-pointer">
-                    <div class=" text-4xl mb-4">
-                        <i class="fa-solid fa-phone" style="color: #545454;"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2 font">Phone</h3>
-                    <p class="text-gray-600">+91 96382 11368</p>
-                </div>
-                <!-- Email -->
-                <div data-aos="fade-up" data-aos-duration="1500"
-                    class="bg-[#e0e1dc] p-6 rounded-2xl border-2 hover:border border-gray-300 shadow hover:shadow-lg transition cursor-pointer">
-                    <div class=" text-4xl mb-4">
-                        <i class="fa-solid fa-envelope" style="color: #545454;"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2 font">Email</h3>
-                    <p class="text-gray-600">jethvakalpesh9638@gmail.com</p>
-                </div>
-                <!-- Location -->
-                <div data-aos="fade-up" data-aos-duration="2100"
-                    class="bg-[#e0e1dc] p-6 rounded-2xl border-2 hover:border border-gray-300 shadow hover:shadow-lg transition cursor-pointer">
-                    <div class=" text-4xl mb-4">
-                        <i class="fa-solid fa-location-dot" style="color: #545454;"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-2 font">Location</h3>
-                    <p class="text-gray-600">Suman sangath, utran, surat</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
 
-    <footer class="bg-[#091e33] text-black ">
-        <div class="max-w-screen-xl mx-auto py-[50px] px-[15px] md:px-6 lg:px-8">
-            <!-- footer Heading -->
-            <div class="mb-4">
-                <h2 class="text-3xl text-center text-white font-bold font">MyPortfolio</h2>
+        <footer class="bg-[#091e33] text-black ">
+            <div class="max-w-screen-xl mx-auto py-[50px] px-[15px] md:px-6 lg:px-8">
+                <!-- footer Heading -->
+                <div class="mb-4">
+                    <h2 class="text-3xl text-center text-white font-bold font">MyPortfolio</h2>
+                </div>
+                <!-- footer bottom text-->
+                <p class="text-md text-gray-500 text-center ">
+                    I hope you enjoyed exploring my work. If you have a project in mind or just want to say hello, I’d
+                    like
+                    to connect!
+                </p>
             </div>
-            <!-- footer bottom text-->
-            <p class="text-md text-gray-500 text-center ">
-                I hope you enjoyed exploring my work. If you have a project in mind or just want to say hello, I’d like
-                to connect!
-            </p>
-        </div>
-    </footer>
+        </footer>
+
+    </div>
 
 
     <!-- Toggle Script -->
@@ -458,6 +471,24 @@
                 }
             });
         });
+    </script>
+
+    <script>
+        let count = 0;
+        let counterEl = document.getElementById('counter');
+        let loader = document.getElementById('loader');
+        let content = document.getElementById('content');
+
+        let interval = setInterval(() => {
+            if (count < 100) {
+                count++;
+                counterEl.textContent = count + "%";
+            } else {
+                clearInterval(interval);
+                loader.style.display = "none";
+                content.style.display = "block";
+            }
+        }, 15); // speed adjust karne ke liye number badlao
     </script>
 
 
