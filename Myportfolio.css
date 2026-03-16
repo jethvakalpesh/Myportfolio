@@ -27,6 +27,7 @@ html {
     height: 30px;
     background-color: rgb(207, 207, 207) !important;
 }
+
 .owl-theme .owl-nav .owl-prev:hover,
 .owl-theme .owl-nav .owl-next:hover {
     background-color: rgb(82, 82, 82) !important;
@@ -35,34 +36,35 @@ html {
 .scrolled {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
 .scrolled-color {
     color: white !important;
 }
 
- /* loader page  */
- #loader {
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     /* background: #111; */
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-direction: column;
-     z-index: 9999;
-          background-color: #e0e1dc;
+/* loader page  */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #111; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 9999;
+    background-color: #e0e1dc;
 
- }
+}
 
- #counter {
-     font-size: 4rem;
-     font-weight: bold;
-     color: #091e33;
- }
+#counter {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #091e33;
+}
 
- /* Main content */
- #content {
-     display: none;
- }
+/* Main content */
+#content {
+    display: none;
+}
